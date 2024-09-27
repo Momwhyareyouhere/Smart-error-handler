@@ -9,14 +9,23 @@ pip install smart-error-handler
 
 Usage:
 ```
-from smart_error_handler import SmartErrorHandler
+from smart_error_handler.smart_error_handler import SmartErrorHandler
 
 handler = SmartErrorHandler()
 
-@handler.handle_error
+@handler.handle_error 
 def divide_numbers(a, b):
     return a / b
 
-result = divide_numbers(10, 0)  # This will trigger the error handler
+
+result1 = divide_numbers(10, 2) 
+print("Result:", result1)
+
+result2 = divide_numbers(10, 0)  # Should trigger ZeroDivisionError
+print("Result:", result2)
+
+result3 = divide_numbers(10, "two")  # Should trigger TypeError
+print("Result:", result3)
+
 
 ```
