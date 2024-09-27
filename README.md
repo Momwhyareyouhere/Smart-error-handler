@@ -4,6 +4,8 @@ Smart Error Handler is a packge that helps with fixing errror easier on a python
 
 I updated some changes in this repository so it will not gonna be same script with the video
 
+Pypi Website:[Website](<https://pypi.org/project/smart-error-handler/>)
+
 Installation:
 ```
 pip install smart-error-handler
